@@ -25,6 +25,8 @@ namespace PigDiceGameDemo
             int totalAttempts = 0;
             int totalRolls = 0;
             double averageRolls = 0.0;
+            string[] gameSummaries = new string[100];
+
 
             while (true)
             {
@@ -46,72 +48,73 @@ namespace PigDiceGameDemo
                     char input = Console.ReadKey().KeyChar;
                     Console.WriteLine();
 
-                    //if(totalScore <= 20)
+                    if (input == 'r')
                     {
-                        if (input == 'r')
-                        {
-                            int rolledNumber = random.Next(1, 7);
-                            Console.WriteLine($"You rolled a {rolledNumber}");
-                            numberOfRolls++;
+                        int rolledNumber = random.Next(1, 7);
+                        Console.WriteLine($"You rolled a {rolledNumber}");
+                        numberOfRolls++;
 
-                            if (rolledNumber == 1)
-                            {
-                                Console.WriteLine("Rolled a 1, turn ends, no points earned.");
-                                Console.WriteLine("--------------------------------------");
-                                attempts++;
-                                turnScore = 0;
-                                //break;
-                            }
-                            else if (totalScore + turnScore + rolledNumber >= 20)
-                            {
-                                Console.WriteLine($"\tTotal score: {totalScore + turnScore + rolledNumber}");
-                                Console.WriteLine($"Congratulations! You reached 20 points or more in {attempts} attempts and {numberOfRolls} rolls.");
-                                break;
-                            }
-                            else
-                            {
-                                turnScore += rolledNumber;
-                            }
-                        }
-                        else if (input == 'h')
+                        if (rolledNumber == 1)
                         {
-                            totalScore += turnScore;
+                            Console.WriteLine("Rolled a 1, turn ends, no points earned.");
+                            Console.WriteLine("--------------------------------------");
                             attempts++;
                             turnScore = 0;
-                            /*if (totalScore >= 20)
-                            {
-                                Console.WriteLine($"\tTotal score: {totalScore}");
-                                Console.WriteLine($"Congratulations! You reached 20 points or more in {attempts} attempts and {numberOfRolls} rolls.");
-                                break;
-                            }*/
+                            //break;
+                        }
+                        else if (totalScore + turnScore + rolledNumber >= 20)
+                        {
+                            Console.WriteLine($"\tTotal score: {totalScore + turnScore + rolledNumber}");
+                            Console.WriteLine("----------------------------------------------------------------");
+                            Console.WriteLine($"\tCongratulations! \n\tYou reached 20 points or more in {attempts} attempts and {numberOfRolls} rolls.");
+                            Console.WriteLine("----------------------------------------------------------------");
+                            break;
                         }
                         else
                         {
-                            Console.WriteLine("Invalid Key press.");
+                            turnScore += rolledNumber;
                         }
                     }
-                    /*else
+                    else if (input == 'h')
                     {
-                        Console.WriteLine($"\tTotal score: {totalScore}");
-                        Console.WriteLine($"Congratulations! You reached 20 points or more in {attempts} attempts and {rolls} rolls.");
-                        break;
-                    }*/
+                        totalScore += turnScore;
+                        attempts++;
+                        turnScore = 0;
 
+                        /*if (totalScore >= 20)
+                        {
+                            Console.WriteLine($"\tTotal score: {totalScore}");
+                            Console.WriteLine($"Congratulations! You reached 20 points or more in {attempts} attempts and {numberOfRolls} rolls.");
+                            break;
+                        }*/
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid Key press.");
+                    }
                 }
 
                 totalGames++;
                 totalAttempts += attempts;
                 totalRolls += numberOfRolls;
 
-                Console.Write("Do you want to play again? (y/n): ");
+                gameSummaries[totalGames - 1] = $"Game {totalGames}: {attempts} attempts {numberOfRolls} rolls";
+
+                Console.Write("\nDo you want to play again? (1 for yes/ any other key for no): ");
                 char playAgain = Console.ReadKey().KeyChar;
                 Console.WriteLine();
 
-                if (playAgain != 'y')
+                if (playAgain != '1')
                 {
                     averageRolls = (double)totalRolls / totalGames;
                     break;
                 }
+            }
+
+            Console.WriteLine("\n\tIndividual Game Details:");
+            for (int i = 0; i < totalGames; i++)
+            {
+                Console.WriteLine($"\t {gameSummaries[i]}");
             }
 
             Console.WriteLine("\n\t\t\tGame Summary:");
@@ -123,5 +126,6 @@ namespace PigDiceGameDemo
         }
     }
 }
+
 
 
