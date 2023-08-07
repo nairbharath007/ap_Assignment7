@@ -1,0 +1,8 @@
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\7\PigDiceGameDemo\bin\Debug\PigDiceGameDemo.exe.config
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\7\PigDiceGameDemo\bin\Debug\PigDiceGameDemo.exe
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\7\PigDiceGameDemo\bin\Debug\PigDiceGameDemo.pdb
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\7\PigDiceGameDemo\obj\Debug\PigDiceGameDemo.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\7\PigDiceGameDemo\obj\Debug\PigDiceGameDemo.csproj.SuggestedBindingRedirects.cache
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\7\PigDiceGameDemo\obj\Debug\PigDiceGameDemo.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\7\PigDiceGameDemo\obj\Debug\PigDiceGameDemo.exe
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\7\PigDiceGameDemo\obj\Debug\PigDiceGameDemo.pdb
