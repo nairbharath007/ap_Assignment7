@@ -1,0 +1,8 @@
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\8\PigDiceGameUsingObjectCalisthenics\bin\Debug\PigDiceGameUsingObjectCalisthenics.exe.config
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\8\PigDiceGameUsingObjectCalisthenics\bin\Debug\PigDiceGameUsingObjectCalisthenics.exe
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\8\PigDiceGameUsingObjectCalisthenics\bin\Debug\PigDiceGameUsingObjectCalisthenics.pdb
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\8\PigDiceGameUsingObjectCalisthenics\obj\Debug\PigDiceGameUsingObjectCalisthenics.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\8\PigDiceGameUsingObjectCalisthenics\obj\Debug\PigDiceGameUsingObjectCalisthenics.csproj.SuggestedBindingRedirects.cache
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\8\PigDiceGameUsingObjectCalisthenics\obj\Debug\PigDiceGameUsingObjectCalisthenics.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\8\PigDiceGameUsingObjectCalisthenics\obj\Debug\PigDiceGameUsingObjectCalisthenics.exe
+C:\Users\acer\Desktop\Aurionpro\Training\Assignments\8\PigDiceGameUsingObjectCalisthenics\obj\Debug\PigDiceGameUsingObjectCalisthenics.pdb
